@@ -45,3 +45,8 @@ new_emails_transformed = vectorizer.transform(new_emails)
 predictions = model.predict(new_emails_transformed)
 print(predictions)
 
+# Get user input and classify emails
+custom_email = input("Enter Email Message : ")
+email_transformed = vectorizer.transform([custom_email])
+prediction = model.predict(email_transformed)
+print(prediction)
